@@ -1,0 +1,51 @@
+.main-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: none;
+
+  padding: 10px;
+}
+
+.btn-search {
+  padding: 10px 20px;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*cards*/
+.main-cards {
+  box-shadow: 0 4px 8px 0 rgba(133, 132, 132, 0.2);
+  background-color: rgba(160, 157, 157, 0.198);
+  width: 400px;
+  border: 1px solid black;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-cards img {
+  width: 80%;
+  margin: 10px 0px;
+}
+
+.main-cards ol {
+  margin-bottom: 15px;
+}
+
+.main-cards button {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+}

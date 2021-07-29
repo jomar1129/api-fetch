@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar-link {
+  display: flex;
+}
+.navbar-link li {
+  margin: 10px;
+}
+
+.nav-link {
+  width: 150px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+  top: 40px;
+}
+
+.nav-item {
+  margin: 10px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.nav-item:hover {
+  background-color: gray;
+}
+
+.react-link {
+  color: black;
+  text-decoration: none;
+}
