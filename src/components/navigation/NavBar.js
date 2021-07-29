@@ -8,7 +8,7 @@ export const NavBar = () => {
     <nav className="navBar">
       <h1>API PROJECTS</h1>
       <ul class="navbar-link">
-        <Link className="react-link" to="/">
+        <Link className="react-link" to="/api-fetch/">
           <li style={{ color: "#f4f4f4" }}>Home</li>
         </Link>
         <li
@@ -23,13 +23,13 @@ export const NavBar = () => {
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
           >
-            <Link className="react-link" to="/weather">
+            <Link className="react-link" to="/api-fetch/weather">
               <li className="nav-item">Weather</li>
             </Link>
-            <Link className="react-link" to="/recipe">
+            <Link className="react-link" to="/api-fetch/recipe">
               <li className="nav-item">Recipe</li>
             </Link>
-            <Link className="react-link" to="/movies">
+            <Link className="react-link" to="/api-fetch/movies">
               <li className="nav-item">Movies</li>
             </Link>
           </ul>

@@ -12,10 +12,10 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/movies" exact component={Movies} />
-          <Route path="/weather" component={WeatherAPi} />
-          <Route path="/recipe" component={Recipe} />
+          <Route path="/api-fetch/" exact component={Home} />
+          <Route path="/api-fetch/movies" exact component={Movies} />
+          <Route path="/api-fetch/weather" component={WeatherAPi} />
+          <Route path="/api-fetch/recipe" component={Recipe} />
         </Switch>
         <footer style={{ textAlign: "center" }}>
           <h3>Created by &copy; Jose Cotejo</h3>
