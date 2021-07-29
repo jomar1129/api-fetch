@@ -7,7 +7,7 @@ export const NavBar = () => {
   return (
     <nav className="navBar">
       <h1>API PROJECTS</h1>
-      <ul class="navbar-link">
+      <ul className="navbar-link">
         <Link className="react-link" to="/api-fetch/">
           <li style={{ color: "#f4f4f4" }}>Home</li>
         </Link>

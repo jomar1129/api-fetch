@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./movies.css";
+import imagepack from "../../images/noimage.jpg";
 
 export const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -22,8 +23,24 @@ export const Movies = () => {
     );
 
     const data = await response.json();
-    console.log(data.d);
+    // if (data != []) {
+    // console.log(data.d);
     setMovies(data.d);
+    // } else {
+    //   alert("not found");
+    // }
+  };
+
+  const checkImageUrl = (image) => {
+    let imageUrl = "";
+    console.log(image);
+    if (typeof image != "undefined") {
+      imageUrl = image.imageUrl;
+    } else {
+      imageUrl = imagepack;
+    }
+
+    return imageUrl;
   };
 
   const updateQuery = (e) => {
@@ -54,7 +71,7 @@ export const Movies = () => {
       <div className="movies-body">
         {movies.map((movie) => (
           <div className="movie-cards">
-            <img src={movie.i.imageUrl} alt={movie.l} />
+            <img src={checkImageUrl(movie.i)} alt={movie.l} />
             <h3>
               {movie.l}({movie.y})
             </h3>
